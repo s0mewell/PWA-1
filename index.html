@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Beauty Salon Solo">
+<meta name="apple-mobile-web-app-title" content="Beauty Salon Solo">
+<meta name="theme-color" content="f5f5dc">
+<meta name="msapplication-navbutton-color" content="f5f5dc">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="png" sizes="512x512" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="512x512" href="Logo.png">
+<link rel="icon" type="png" sizes="48x48" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="48x48" href="Logo.png">
+<link rel="icon" type="png" sizes="72x72" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="72x72" href="Logo.png">
+<link rel="icon" type="png" sizes="96x96" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="96x96" href="Logo.png">
+<link rel="icon" type="png" sizes="144x144" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="144x144" href="Logo.png">
+<link rel="icon" type="png" sizes="192x192" href="Logo.png">
+<link rel="apple-touch-icon" type="png" sizes="192x192" href="Logo.png">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+<title>Solo Beauty Salon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="logo"><img src="Logo.png" width="70", height="70"> Solo</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контактные данные</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="about" class="about">
+    <div class="container">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в Solo Beaty! Мы предлагаем вам огромной спектр услуг с лучшими качеством и ценами.</p>
+    </div>
+</section>
+<section id="services" class="services">
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Услуги стилиста</li>
+            <li>Косметелогия</li>
+            <li>Ногтевая студия</li>
+            <li>Брови/ресницы</li>
+        </ul>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Наши контакты</h2>
+        <p>Email: SoloBeauty999@yandex.ru</p>
+        <p>Телефон: +7 (981) 000-01-11</p>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Solo Beauty Salon. All rights reserved.</p>
+    </div>
+      </div>
+</footer>
+</body>
+</html>

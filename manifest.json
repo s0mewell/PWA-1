@@ -1,0 +1,41 @@
+{
+    "name": "Beauty Salon \"Solo\"",
+    "short_name":"Solo",
+    "description": "A Beauty salon with nail masters, hair masters ",
+    "start_url": "/",
+    "lang": "ru",
+    "theme_color": "f5f5dc",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "Logo.png",
+        "sizes": "512x512",
+        "type": "png"
+      },
+      {
+        "src": "Logo.png",
+        "sizes": "48x48",
+        "type": "png"
+      },
+      {
+        "src": "Logo.png",
+        "sizes": "72x72",
+        "type": "png"
+      },
+      {
+        "src": "Logo.png",
+        "sizes": "96x96",
+        "type": "png"
+      },
+      {
+        "src": "Logo.png",
+        "sizes": "144x144",
+        "type": "png"
+      },
+      {
+        "src": "Logo.png",
+        "sizes": "192x192",
+        "type": "png"
+      }
+    ]
+  }
